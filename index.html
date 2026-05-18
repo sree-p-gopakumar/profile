@@ -45,7 +45,7 @@
         <div class="hero__meta">
           <span>📍 Singapore</span>
           <span>✉ <a href="mailto:sree.p.gopakumar@gmail.com">sree.p.gopakumar@gmail.com</a></span>
-          <span>☎ +65 9086 3075</span>
+          <span>☎ <a href="#contact">Request phone number</a></span>
         </div>
         <div class="hero__cta">
           <a href="#experience" class="btn btn--primary">View Experience</a>
@@ -533,7 +533,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section--alt">
     <div class="container contact">
       <h3 class="section__title">Let's Connect</h3>
       <p class="contact__lede">
@@ -543,7 +543,77 @@
       <div class="contact__links">
         <a href="mailto:sree.p.gopakumar@gmail.com" class="btn btn--primary">✉ sree.p.gopakumar@gmail.com</a>
         <a href="https://www.linkedin.com/in/sreekumarpg456" target="_blank" rel="noopener" class="btn btn--ghost">in LinkedIn</a>
-        <a href="tel:+6590863075" class="btn btn--ghost">☎ +65 9086 3075</a>
+      </div>
+
+      <!-- Request phone -->
+      <div class="phone-gate" id="phoneGate">
+        <h4 class="phone-gate__title">Need to call?</h4>
+        <p class="phone-gate__lede">
+          Share your email and a quick note on what you'd like to discuss — I'll send you a notification
+          and reveal my number right after.
+        </p>
+
+        <form id="phoneForm" class="phone-form" novalidate>
+          <!-- ─────────────────────────────────────────────────────────────
+               Set up your free Web3Forms key:
+                 1. Go to https://web3forms.com → enter your email →
+                    "Create Access Key" → copy the key.
+                 2. Replace the value of the access_key hidden input below.
+               No account, no card, free for 250 submissions / month.
+               ───────────────────────────────────────────────────────────── -->
+          <input type="hidden" name="access_key" value="a2ae6fbf-44ae-406a-9241-0e7cfd7578f5">
+          <input type="hidden" name="subject" value="Portfolio · Phone number requested">
+          <input type="hidden" name="from_name" value="Portfolio Phone Gate">
+          <!-- Honeypot (anti-bot) -->
+          <input type="checkbox" name="botcheck" class="phone-form__honeypot" tabindex="-1" autocomplete="off">
+
+          <div class="phone-form__row">
+            <label for="pf-email">Your email</label>
+            <input
+              id="pf-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="you@company.com"
+            >
+          </div>
+
+          <div class="phone-form__row">
+            <label for="pf-reason">Reason for the call</label>
+            <textarea
+              id="pf-reason"
+              name="message"
+              required
+              rows="3"
+              placeholder="e.g. Engineering Manager role at [company] — initial chat about AI delivery experience"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary phone-form__submit">
+            <span class="phone-form__submit-label">Reveal phone number</span>
+            <span class="phone-form__submit-spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="phone-form__legal">
+            Submitting sends your email and message to me at <strong>sree.p.gopakumar@gmail.com</strong>.
+            No tracking, no list, no spam.
+          </p>
+        </form>
+
+        <div class="phone-reveal" id="phoneReveal" hidden>
+          <div class="phone-reveal__check">✓</div>
+          <p class="phone-reveal__msg">Thanks — I've been notified. Here's my direct line:</p>
+          <div class="phone-reveal__number">
+            <a href="tel:+6590863075" id="phoneNumber">+65 9086 3075</a>
+            <button type="button" class="phone-reveal__copy" id="phoneCopy" aria-label="Copy phone number">Copy</button>
+          </div>
+        </div>
+
+        <div class="phone-error" id="phoneError" hidden>
+          <p>Something went wrong submitting the form. Please email me directly at
+            <a href="mailto:sree.p.gopakumar@gmail.com">sree.p.gopakumar@gmail.com</a>.</p>
+        </div>
       </div>
     </div>
   </section>
