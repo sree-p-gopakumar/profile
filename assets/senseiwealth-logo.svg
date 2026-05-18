@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SenseiWealth logo">
+  <rect width="512" height="512" rx="96" fill="#eab308"/>
+  <rect x="0" y="220" width="512" height="72" fill="#0f172a"/>
+  <rect x="60" y="240" width="60" height="32" fill="#fcd34d"/>
+</svg>
