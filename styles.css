@@ -258,13 +258,30 @@ a:hover { color: var(--c-accent-d); text-decoration: underline; }
 .about__icon { font-size: 1.6rem; margin-bottom: 10px; }
 .about__card h4 {
   margin: 0 0 6px;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 600;
+  line-height: 1.35;
 }
 .about__card p {
   margin: 0;
   color: var(--c-muted);
   font-size: 0.92rem;
+}
+
+/* About — closing focus block */
+.about__focus {
+  margin-top: 36px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, var(--c-accent-l) 0%, #fff 100%);
+  border-left: 4px solid var(--c-accent);
+  border-radius: var(--radius);
+}
+.about__focus p { margin: 0; }
+.about__focus p + p { margin-top: 14px; }
+.about__credential {
+  font-weight: 600;
+  color: var(--c-accent-d);
+  font-size: 0.95rem;
 }
 
 /* Skills */
