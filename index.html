@@ -19,6 +19,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -309,8 +310,126 @@
     </div>
   </section>
 
+  <!-- Passion Projects -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <h3 class="section__title">Passion Projects</h3>
+
+      <article class="project">
+        <header class="project__header">
+          <div class="project__heading">
+            <h4 class="project__name">SenseiWealth</h4>
+            <span class="project__status">In Development</span>
+          </div>
+          <p class="project__tagline">Disciplined and structured portfolio management.</p>
+          <p class="project__pitch">
+            A personal-finance and investing-discipline app that tracks portfolios across the
+            <strong>US, India, and Singapore</strong> — and enforces investing discipline through a
+            personal rules vault, a vector-searchable mistake log, and AI-powered checks before any
+            new investment is acted on. Built on the principle that good investing is about
+            <em>reflection over reaction</em>.
+          </p>
+        </header>
+
+        <h5 class="project__sub">Tech Stack</h5>
+        <div class="chips chips--lg">
+          <span>React</span><span>TypeScript</span><span>Tailwind</span>
+          <span>Node.js</span><span>Express</span><span>PostgreSQL</span>
+          <span>Chroma · RAG</span><span>Claude API</span><span>Claude Vision</span>
+          <span>Docker</span><span>PWA</span><span>Finnhub API</span>
+        </div>
+
+        <h5 class="project__sub">Modules</h5>
+        <div class="project__modules">
+
+          <div class="module">
+            <div class="module__icon">📊</div>
+            <div class="module__body">
+              <h6>Portfolio Dashboard</h6>
+              <p>Unified multi-currency view (USD / INR / SGD) with live US equity pricing via Finnhub, allocation breakdowns, and an "investable worth" view that excludes illiquid assets.</p>
+            </div>
+          </div>
+
+          <div class="module">
+            <div class="module__icon">📈</div>
+            <div class="module__body">
+              <h6>Net Worth Tracker</h6>
+              <p>Monthly snapshots of the full financial picture — P&amp;L by geography, FX-rate captures at snapshot time, and 12-month trend charts in INR and USD.</p>
+            </div>
+          </div>
+
+          <div class="module">
+            <div class="module__icon">💰</div>
+            <div class="module__body">
+              <h6>Monthly Budget</h6>
+              <p>Income and categorised expense tracking with carry-forward billing, named one-off line items, and Claude-flagged spending anomalies.</p>
+            </div>
+          </div>
+
+          <div class="module">
+            <div class="module__icon">📜</div>
+            <div class="module__body">
+              <h6>Investing Rules Vault</h6>
+              <p>A personal investing constitution. Drag-orderable rules across Entry, Exit, Sizing, Mindset, and Research — that gate every new idea before it can be acted on.</p>
+            </div>
+          </div>
+
+          <div class="module module--ai">
+            <div class="module__icon">🧠</div>
+            <div class="module__body">
+              <h6>Mistake Log <span class="module__tag">RAG</span></h6>
+              <p>Private journal of past errors, embedded into a Chroma vector store. New ideas are semantically matched against past mistakes — Sensei warns you if you're about to repeat one.</p>
+            </div>
+          </div>
+
+          <div class="module module--ai">
+            <div class="module__icon">💡</div>
+            <div class="module__body">
+              <h6>Idea Scratchpad <span class="module__tag">Vision</span></h6>
+              <p>Capture-and-evaluate workflow for new ideas. Claude Vision extracts ticker, target, and thesis from research screenshots; ideas can't graduate to "Approved" without rules acknowledgement.</p>
+            </div>
+          </div>
+
+          <div class="module">
+            <div class="module__icon">🥋</div>
+            <div class="module__body">
+              <h6>XP &amp; Belt Progression</h6>
+              <p>Gamification layer that rewards consistent discipline. White → Black belt progression, daily streak counter, and bonus XP events for healthy habits.</p>
+            </div>
+          </div>
+
+          <div class="module">
+            <div class="module__icon">🔔</div>
+            <div class="module__body">
+              <h6>Rule Reminder</h6>
+              <p>Weekly nudge to re-read your principles. Banner shown automatically when entering the Idea Scratchpad if rules haven't been reviewed in 7+ days.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="project__why">
+          <strong>Why I built it:</strong> most investment trackers are passive — they show you what
+          you have. SenseiWealth is active — it reminds you of your own rules, warns you when
+          you're about to repeat a past mistake, and makes good financial habits feel like a game
+          worth playing.
+        </p>
+
+        <div class="project__collab">
+          <div class="project__collab-text">
+            <h6>Interested to collaborate?</h6>
+            <p>If SenseiWealth resonates — or you're building in the disciplined-investing, RAG, or agentic-AI space — I'd love to chat.</p>
+          </div>
+          <a class="btn btn--primary" href="mailto:sree.p.gopakumar@gmail.com?subject=SenseiWealth%20%E2%80%94%20Collaboration">
+            ✉ Email me
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- Education & Certifications -->
-  <section id="education" class="section section--alt">
+  <section id="education" class="section">
     <div class="container">
       <h3 class="section__title">Education &amp; Certifications</h3>
 

@@ -29,7 +29,7 @@ window.addEventListener('scroll', setActive, { passive: true });
 setActive();
 
 // ----- Reveal on scroll -----
-const targets = document.querySelectorAll('.about__card, .skill-group, .timeline__item, .edu__item, .cert');
+const targets = document.querySelectorAll('.about__card, .skill-group, .timeline__item, .edu__item, .cert, .project, .module');
 targets.forEach(t => t.classList.add('reveal'));
 
 if ('IntersectionObserver' in window) {
